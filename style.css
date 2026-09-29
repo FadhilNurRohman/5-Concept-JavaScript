@@ -49,15 +49,22 @@ body{
     padding: 40px 60px;
 }
 .concept-container{
-    width: 700px;
+    width: 690px;
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .concept-card{
-    background-color: #eaf0f8;
-    border: 1px solid #d5d5d5;
+    background-color: #e5edf8;
+    border: 1px solid #c0bfbf;
     border-radius: 25px;
     padding: 40px;
     min-height: 320px;
     box-shadow: 0 8px 25px rgb(0, 0, 0, 0.08);
+}
+.concept-card{
+    flex: 0 0 690px;
 }
 .concept-number{
     font-size: 14px;
@@ -76,4 +83,28 @@ body{
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
+}
+.dark-mode{
+    background-color: #151f33;
+    color: white;
+}
+.dark-mode .header-title p{
+    color: #ccc;
+}
+.dark-mode .concept-card{
+    background-color: #1f2937;
+    border-color: #444;
+}
+.dark-mode .concept-number{
+    color: #aaa; 
+}
+.dark-mode .slide-button{
+    background-color: #1f2937;
+    color: white;
+    border-color: #555;
+}
+.dark-mode .header-button button{
+    background-color: #1f2937;
+    color: white;
+    border-color: #555;
 }
